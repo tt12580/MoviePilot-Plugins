@@ -9,7 +9,7 @@ from app.plugins import _PluginBase
 
 class CustomIndexer(_PluginBase):
     # 插件名称
-    plugin_name = "自定义索引站点"
+    plugin_name = "自定义索引站点1"
     # 插件描述
     plugin_desc = "修改或扩展内建索引器支持的站点。"
     # 插件图标
