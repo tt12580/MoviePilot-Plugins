@@ -49,6 +49,7 @@ class CustomIndexer(_PluginBase):
                         if not domain or not jsonstr:
                             continue
                         jsonstr = base64.b64decode(jsonstr).decode('utf-8')
+                        logger.error(f"自定义索引站点配置：{jsonstr}")
                         self.siteshelper.add_indexer(domain, json.loads(jsonstr))
                     except Exception as err:
                         logger.error(f"自定义索引站点配置错误：{err}")
